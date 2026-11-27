@@ -1,0 +1,5 @@
+/build*/
+/.vs/
+/.vscode/
+/team-board.db
+/team-board.db.lock/
