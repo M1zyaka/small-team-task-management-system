@@ -247,6 +247,7 @@ int run(Args args)
 
     const BoardFile file{std::move(path)};
     auto board = file.load();
+    // Buffer command output so a failed save cannot report success.
     std::ostringstream output;
     const Date report_date = today.value_or(std::chrono::floor<std::chrono::days>(
         std::chrono::system_clock::now()));
@@ -260,6 +261,7 @@ int run(Args args)
 #ifdef _WIN32
 std::string to_utf8(const wchar_t* value)
 {
+    // Windows supplies UTF-16 arguments. Measure the UTF-8 buffer before allocating it.
     const int size = WideCharToMultiByte(CP_UTF8, WC_ERR_INVALID_CHARS, value, -1, nullptr, 0,
                                          nullptr, nullptr);
     if (size == 0) {

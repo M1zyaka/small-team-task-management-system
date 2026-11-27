@@ -3,6 +3,7 @@ set(board "${TEST_DIR}/course board.db")
 file(REMOVE "${board}")
 
 function(run expected message)
+    # Each command runs in a fresh process and reads the snapshot from disk.
     execute_process(
         COMMAND "${APP}" --data "${board}" --today 2026-12-02 ${ARGN}
         RESULT_VARIABLE result
@@ -23,6 +24,7 @@ run(0 "Added member #1." member add "Avery Chen")
 run(0 "Added task #1." task add "Prepare release" high 2026-12-01 "Check the build.")
 run(0 "Added bug #2." bug add "Export fails" medium 2026-12-02 critical)
 run(0 "Updated assignment for item #1." task assign 1 1)
+# Compare the exact saved bytes before and after rejected commands.
 file(SHA256 "${board}" before)
 run(1 "Cannot move from todo to done." task move 1 done)
 run(1 "Unknown member ID: 2" task assign 1 2)

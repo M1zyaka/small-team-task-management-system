@@ -6,6 +6,7 @@
 
 namespace team_board {
 
+// Owns the file lock for the whole read, modify, and save cycle.
 class BoardFile {
 public:
     explicit BoardFile(std::filesystem::path path);

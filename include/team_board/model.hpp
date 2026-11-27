@@ -112,6 +112,7 @@ struct Summary {
 class TeamBoard {
 public:
     TeamBoard() = default;
+    // Restore the saved IDs and check that every assignment points to a member.
     TeamBoard(Id next_member, Id next_item, std::vector<Member> members,
               std::vector<std::unique_ptr<WorkItem>> items);
 
@@ -127,6 +128,7 @@ public:
     [[nodiscard]] Id next_item() const noexcept { return next_item_; }
     [[nodiscard]] const std::map<Id, Member>& members() const noexcept { return members_; }
     [[nodiscard]] const WorkItem& item(Id id) const;
+    // The board owns the listed items. Removing an item invalidates its pointer.
     [[nodiscard]] std::vector<const WorkItem*> list(Filter filter = {}) const;
     [[nodiscard]] Summary summary(Date today) const;
 

@@ -21,6 +21,7 @@ add_executable(team-board src/main.cpp)
 target_link_libraries(team-board PRIVATE team_board)
 enable_project_warnings(team-board)
 if(MINGW)
+    # Select the MinGW startup routine for the wide-character Windows entry point.
     target_link_options(team-board PRIVATE -municode)
 endif()
 

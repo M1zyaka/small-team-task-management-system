@@ -105,6 +105,8 @@ void require_available_id(Id next)
 auto ordering_key(const WorkItem& item)
 {
     const auto due = item.details().due;
+    // The deadline flag puts undated items last among open items and among completed items.
+    // Negating urgency makes a higher score sort earlier when deadlines match.
     return std::tuple{item.status() == Status::done, !due.has_value(), due.value_or(Date{}),
                       -item.urgency(), item.id()};
 }
@@ -185,6 +187,7 @@ std::optional<Severity> WorkItem::severity() const noexcept
 
 int WorkItem::urgency() const noexcept
 {
+    // The base class defines the priority scale. Each item type supplies its own bonus.
     return static_cast<int>(details_.priority) + urgency_bonus();
 }
 
@@ -196,6 +199,7 @@ void WorkItem::edit(Details details)
 
 void WorkItem::move_to(Status target)
 {
+    // A reopened item returns to the backlog and must be started again before completion.
     constexpr std::array transitions{
         std::pair{Status::todo, Status::in_progress},
         std::pair{Status::in_progress, Status::todo},
@@ -362,6 +366,7 @@ Summary TeamBoard::summary(Date today) const
             continue;
         }
         const auto due = item->details().due;
+        // A deadline expires once the reporting date moves past it.
         if (due && *due < today) {
             ++result.overdue;
         }

@@ -105,6 +105,7 @@ TeamBoard read_board(std::istream& input)
     if (input.bad() || !input.eof()) {
         throw std::runtime_error("Could not read the complete snapshot.");
     }
+    // A snapshot truncated between complete records still fails this check.
     if (!ended) {
         throw std::invalid_argument("Snapshot has no END record.");
     }
@@ -144,6 +145,7 @@ BoardFile::BoardFile(fs::path path) : path_(std::move(path))
     lock_ = path_;
     lock_ += ".lock";
     staging_ = lock_ / "pending.db";
+    // Creating the directory acquires the lock in one filesystem operation.
     if (!fs::create_directory(lock_)) {
         throw std::runtime_error("Board is locked: " + display_path(lock_));
     }
@@ -184,6 +186,7 @@ void BoardFile::save(const TeamBoard& board) const
     output.imbue(std::locale::classic());
     write_board(output, board);
     output.close();
+    // Replace the previous snapshot only after buffered writes have succeeded.
     fs::rename(staging_, path_);
 }
 
