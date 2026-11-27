@@ -6,22 +6,22 @@ These 25 candidate sources cover issue tracking, workflow modeling, object-orien
 
 ICSE is ranked A* in the 2026 ICORE ranking. Both entries are full research papers. [ICORE conference ranking](https://portal.core.edu.au/conf-ranks/?by=all&page=1&search=ICSE&sort=atitle&source=all)
 
-1. Anvik, J., Hiew, L., and Murphy, G. C. *Who Should Fix This Bug?* Proceedings of the 28th International Conference on Software Engineering, 2006, pp. 361–370. Relevant to assignment and triage. [ACM paper](https://doi.org/10.1145/1134285.1134336)
-2. Saha, A., and Chaparro, O. *Decoding the Issue Resolution Process in Practice via Issue Report Analysis: A Case Study of Firefox*. Proceedings of the 47th IEEE/ACM International Conference on Software Engineering, 2025, pp. 2316–2328. Relevant to issue states and work activities. [IEEE paper](https://doi.org/10.1109/ICSE55347.2025.00241)
+1. Anvik, J., Hiew, L., and Murphy, G. C. *Who Should Fix This Bug?* Proceedings of the 28th International Conference on Software Engineering, 2006, pp. 361–370. Relevant to assignment and triage. [DOI](https://doi.org/10.1145/1134285.1134336) · [Publication and paper from the authors' lab](https://www.cs.ubc.ca/labs/spl/projects/bugTriage.html)
+2. Saha, A., and Chaparro, O. *Decoding the Issue Resolution Process in Practice via Issue Report Analysis: A Case Study of Firefox*. Proceedings of the 47th IEEE/ACM International Conference on Software Engineering, 2025, pp. 2316–2328. Relevant to issue states and work activities. [DOI](https://doi.org/10.1109/ICSE55347.2025.00241) · [Author-hosted paper](https://antu-saha.github.io/assets/pdf/papers/icse-2025.pdf)
 
 ## Articles from Level 1 White List journals
 
-*Programming and Computer Software* (ISSN 0132-3474) is listed at Level 1 in the official registry. [White List journal record](https://journalrank.rcsi.science/ru/record-sources/levels/29870/)
+The Russian journal *Programmirovanie*, presented as *Programming and Computer Software* on the publisher's English site, is listed at Level 1 under ISSN 0132-3474. [White List journal record](https://journalrank.rcsi.science/ru/record-sources/levels/29870/)
 
-3. Neyzov, M. V., and Kuzmin, E. V. *Automata-Based Model with Signal Perspective*. Programming and Computer Software, no. 4, 2026, pp. 147–160. Background on modeling behavior with explicit states. [Journal article](https://doi.org/10.7868/S3034584726040097)
-4. Vasenina, A. I., Kostyukov, Y. O., and Mordvinov, D. A. *Automatic Inference of Synchronous Regular Invariants*. Programming and Computer Software, no. 4, 2025, pp. 33–49. Background on how invariants can characterize legal behavior. [Journal article](https://doi.org/10.7868/S3034584725040038)
+3. Neyzov, M. V., and Kuzmin, E. V. *Automata-Based Model with Signal Perspective*. Programmirovanie, no. 4, 2026, pp. 147–160. Background on modeling behavior with explicit states. [DOI](https://doi.org/10.7868/S3034584726040097) · [Journal record](https://journals.rcsi.science/0132-3474/article/view/466357)
+4. Vasenina, A. I., Kostyukov, Y. O., and Mordvinov, D. A. *Automatic Inference of Synchronous Regular Invariants*. Programmirovanie, no. 4, 2025, pp. 33–49. Background on how invariants can characterize legal behavior. [DOI](https://doi.org/10.7868/S3034584725040038) · [Journal record](https://journals.eco-vector.com/0132-3474/article/view/695674/en_US)
 
 ## Textbooks and monographs
 
 5. Cormen, T. H., Leiserson, C. E., Rivest, R. L., and Stein, C. *Introduction to Algorithms*. 4th ed., MIT Press, 2022. [Publisher](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/)
 6. Fowler, M. *Patterns of Enterprise Application Architecture*. Addison-Wesley, 2002. [Author's book page](https://martinfowler.com/books/eaa.html)
 7. Gamma, E., Helm, R., Johnson, R., and Vlissides, J. *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1995. [Publisher](https://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-9780201633610)
-8. Sommerville, I. *Software Engineering*. 10th ed., Pearson, 2022 print listing. [Publisher](https://www.pearson.com/en-us/subject-catalog/p/software-engineering/P200000003258/9780133943238)
+8. Sommerville, I. *Software Engineering*. 10th ed., Pearson, 2016. ISBN 978-0-13-394303-0. [Publisher](https://www.pearson.com/en-us/subject-catalog/p/software-engineering/P200000003258?tab=title-overview&view=educator)
 9. Stroustrup, B. *A Tour of C++*. 3rd ed., Addison-Wesley, 2022. [Author's book page](https://www.stroustrup.com/tour3.html)
 
 ## Periodicals
