@@ -1,4 +1,4 @@
-# Small Team Task Management System
+# Small Team Task Management System — Ilya Shabardin
 
 **A C++20 command-line board for tracking tasks and bugs in a small team.**
 
@@ -6,15 +6,15 @@ Register team members, assign work, and see which items need attention. The boar
 
 [Quick start](#quick-start) · [Commands](#commands) · [Tests](#tests) · [Design](docs/design.md) · [Coursework guide](docs/coursework.md)
 
-[![Build and test](https://github.com/M1zyaka/small-team-task-management-system/actions/workflows/ci.yml/badge.svg)](https://github.com/M1zyaka/small-team-task-management-system/actions)
+[![Build and test](https://github.com/M1zyaka/small-team-task-management-system-ilya-shabardin/actions/workflows/ci.yml/badge.svg)](https://github.com/M1zyaka/small-team-task-management-system-ilya-shabardin/actions)
 
 ## Quick start
 
 Install CMake 3.20 or newer and a C++20 compiler with calendar support. GitHub Actions builds with the compiler supplied by each Linux, Windows, and macOS runner.
 
 ```sh
-git clone https://github.com/M1zyaka/small-team-task-management-system.git
-cd small-team-task-management-system
+git clone https://github.com/M1zyaka/small-team-task-management-system-ilya-shabardin.git
+cd small-team-task-management-system-ilya-shabardin
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release --parallel
 ctest --test-dir build -C Release --output-on-failure
