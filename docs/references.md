@@ -7,14 +7,14 @@ These 25 candidate sources cover issue tracking, workflow modeling, object-orien
 ICSE is ranked A* in the 2026 ICORE ranking. Both entries are full research papers. [ICORE conference ranking](https://portal.core.edu.au/conf-ranks/?by=all&page=1&search=ICSE&sort=atitle&source=all)
 
 1. Anvik, J., Hiew, L., and Murphy, G. C. *Who Should Fix This Bug?* Proceedings of the 28th International Conference on Software Engineering, 2006, pp. 361–370. Relevant to assignment and triage. [ACM paper](https://doi.org/10.1145/1134285.1134336)
-2. Saha, A., and Chaparro, O. *Decoding the Issue Resolution Process In Practice via Issue Report Analysis: A Case Study of Firefox*. Proceedings of the 47th IEEE/ACM International Conference on Software Engineering, 2025. Relevant to issue states and work activities. [ICSE research track](https://conf.researchr.org/details/icse-2025/icse-2025-research-track/244/Decoding-the-Issue-Resolution-Process-In-Practice-via-Issue-Report-Analysis-A-Case-S)
+2. Saha, A., and Chaparro, O. *Decoding the Issue Resolution Process in Practice via Issue Report Analysis: A Case Study of Firefox*. Proceedings of the 47th IEEE/ACM International Conference on Software Engineering, 2025, pp. 2316–2328. Relevant to issue states and work activities. [IEEE paper](https://doi.org/10.1109/ICSE55347.2025.00241)
 
 ## Articles from Level 1 White List journals
 
 *Programming and Computer Software* (ISSN 0132-3474) is listed at Level 1 in the official registry. [White List journal record](https://journalrank.rcsi.science/ru/record-sources/levels/29870/)
 
 3. Neyzov, M. V., and Kuzmin, E. V. *Automata-Based Model with Signal Perspective*. Programming and Computer Software, no. 4, 2026, pp. 147–160. Background on modeling behavior with explicit states. [Journal article](https://doi.org/10.7868/S3034584726040097)
-4. Vasenina, A. I., Kostyukov, Y. O., and Mordvinov, D. A. *Automatic Inference of Synchronous Regular Invariants* (title translated). Programming and Computer Software, no. 4, 2025, pp. 33–49 in the Russian edition. Background on how invariants can characterize legal behavior. [Journal issue](https://journals.rcsi.science/0132-3474/issue/view/23715)
+4. Vasenina, A. I., Kostyukov, Y. O., and Mordvinov, D. A. *Automatic Inference of Synchronous Regular Invariants*. Programming and Computer Software, no. 4, 2025, pp. 33–49. Background on how invariants can characterize legal behavior. [Journal article](https://doi.org/10.7868/S3034584725040038)
 
 ## Textbooks and monographs
 
@@ -40,11 +40,11 @@ ICSE is ranked A* in the 2026 ICORE ranking. Both entries are full research pape
 ## Electronic resources
 
 17. Atlassian. *Trello 101: Learn Trello Board Basics*. [Product guide](https://trello.com/en/guide/trello-101)
-18. GitHub. *About Issues*. [GitHub Docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues)
-19. Kitware. *ctest(1)*. [CMake documentation](https://cmake.org/cmake/help/v3.20/manual/ctest.1.html)
-20. Kitware. *target_compile_features*. [CMake documentation](https://cmake.org/cmake/help/v3.20/command/target_compile_features.html)
-21. Microsoft. *WideCharToMultiByte Function*. [Win32 API documentation](https://learn.microsoft.com/en-us/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)
-22. SQLite. *Transaction*. [SQLite documentation](https://sqlite.org/lang_transaction.html)
-23. Stroustrup, B., and Sutter, H. (eds.). *C++ Core Guidelines*. [ISO C++ project](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
-24. WG21. *Extending <chrono> to Calendars and Time Zones*. P0355R7, 2018. [Standards committee paper](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0355r7.html)
-25. WG21. *Adopt the File System TS for C++17*. P0218R1, 2016. [Standards committee paper](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)
+18. Dawes, B. *Adopt the File System TS for C++17*. WG21 P0218R1, 2016. [Standards committee paper](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)
+19. GitHub. *About Issues*. [GitHub Docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues)
+20. Hinnant, H. E., and Kamiński, T. *Extending \<chrono\> to Calendars and Time Zones*. WG21 P0355R7, 2018. [Standards committee paper](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0355r7.html)
+21. Kitware. *ctest(1)*. [CMake documentation](https://cmake.org/cmake/help/v3.20/manual/ctest.1.html)
+22. Kitware. *target_compile_features*. [CMake documentation](https://cmake.org/cmake/help/v3.20/command/target_compile_features.html)
+23. Microsoft. *WideCharToMultiByte Function*. [Win32 API documentation](https://learn.microsoft.com/en-us/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)
+24. SQLite. *Transaction*. [SQLite documentation](https://sqlite.org/lang_transaction.html)
+25. Stroustrup, B., and Sutter, H. (eds.). *C++ Core Guidelines*. [ISO C++ project](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)

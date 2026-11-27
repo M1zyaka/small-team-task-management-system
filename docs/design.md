@@ -22,6 +22,8 @@ Table 1 — Work item transitions
 
 The explicit transition relation prevents closing an item directly from the backlog. Reopening returns it to the backlog, where the team can schedule it again. The rule is checked before changing an item.
 
+The return and reopen transitions accommodate rework. Saha and Chaparro observed that issue resolution in Firefox is iterative, which supplies an example of why an issue workflow should allow revisiting earlier stages. Neyzov and Kuzmin describe how automata can represent behavior through explicit states. This board keeps the model to three states, so a fixed transition table is sufficient. [ICSE case study](https://doi.org/10.1109/ICSE55347.2025.00241) · [Automata-based model](https://doi.org/10.7868/S3034584726040097)
+
 A query selects items that satisfy both supplied filters. The status filter is equality over the three states. The assignee filter is either equality to a known member ID, a check for absent ownership, or unrestricted. Given an item *w*, the queue sorts the following tuple lexicographically in ascending order.
 
 ```text
